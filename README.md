@@ -32,7 +32,7 @@ Within *CURVE*, users can view the COVID-19 hospital, ICU, and ventilator census
   
     The bed capacity data are stored in the "parameters.csv" file. The 1st column (named `item`) stores the categories of the beds, including currently occupied non-COVID-19 beds (named `all`), additional unoccupied surge beds (named `surge`), unoccupied virtual hospital acute beds (named `virtual_acute`), unoccupied acute care medical facility beds (named `morecrot_bed`), and projected non-COVID-19 beds based on known hospital metrics (named `pred_non_covid`).
     
-    The 2nd column contains total numbers of beds. For example, on 3/11/2020, we had 100 surge beds, followed by surge bedcounts of 583, 1,744, and 2,000 on 4/21, 4/23, and 5/1/2020, respectively. Note the 3rd column, entitled `start_date`, contains the aforementioned dates.
+    The 2nd column contains total numbers of beds. For example, on 3/11/2020, we had 100 surge beds, followed by surge bed counts of 583, 1,744, and 2,000 on 4/21, 4/23, and 5/1/2020, respectively. Note the 3rd column, entitled `start_date`, contains the aforementioned dates.
     
     Users can also change the beds labels and colors (4th and 6th columns). Note that a bed category should have a consistent label and color. For example, all surge beds have the same label (`Surge Beds`) and color (`rgba(183, 236, 234, 0.5)`).  
     
