@@ -1,0 +1,11 @@
+item,number,start_date,label,stackgroup,fillcolor,note2
+all,2972,3/11/2020,Current Beds,one,"rgba(216, 244, 239, 0.5)",Current occupied non-covid 19 beds
+surge,100,3/11/2020,Surge Beds,one,"rgba(183, 236, 234,0.5)",
+surge,583,4/21/2020,Surge Beds,one,"rgba(183, 236, 234,0.5)",
+surge,1744,4/23/2020,Surge Beds,one,"rgba(183, 236, 234,0.5)",
+surge,2000,5/1/2020,Surge Beds,one,"rgba(183, 236, 234,0.5)",
+virtual_acute_bed,0,3/11/2020,Virtual Acute Beds,one,"rgba(151, 222, 231,0.5)",
+virtual_acute_bed,0,4/8/2020,Virtual Acute Beds,one,"rgba(151, 222, 231,0.5)",
+morecrot_bed,200,4/12/2020,ACMF Beds,one,"rgba(120, 197, 211,0.5)",
+morecrot_bed,250,4/15/2020,ACMF Beds,one,"rgba(120, 197, 211,0.5)",
+pred_non_covid,1385,3/20/2020,Total Occupied \nNon-Covid Projected,two,"rgba(0,128,128, 0.7)",projected non-covid 19 beds
