@@ -181,7 +181,7 @@ server <- function(input, output, session) {
       h <- input$slider_h
       dat.date <- input$dat.date
 
-      fig <- plot_ly(hosp_holder, x = ~date, y = ~H_Fit_cur, name = paste0("Covid-19 Hospital Census Time Series Model\n, ",h,"-Day Forecast CRI Region as of ",format(dat.date, "%B %d, %Y")), mode = 'lines', type = 'scatter')
+      fig <- plot_ly(hosp_holder, x = ~date, y = ~H_Fit_cur, name = paste0("Covid-19 Hospital Census Time Series Model,\n",h,"-Day Forecast CRI Region as of ",format(dat.date, "%B %d, %Y")), mode = 'lines', type = 'scatter')
       fig <- fig %>% add_markers(data = bed_stat_dat, x = ~date, y=~hosp, name = "Observed Hospital Census")
       fig <- fig %>% add_polygons(data = poly01, x=~date, y=~Bounds, color = I("#00BFC4"), opacity = 0.5, name = "95% Prediction Interval for In-Sample One-Step Forecasts")
       fig <- fig %>% add_polygons(data = poly02_80, x=~date, y=~Bounds, color = I("#00BFC4"), opacity = 0.5, name = "80% Prediction Interval for Out-of-Sample Forecasts ")
