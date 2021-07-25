@@ -225,7 +225,7 @@ server <- function(input, output, session) {
       poly04 <- update_all_data$Vent_list$poly04
       
       fig <- plot_ly(V_holder, x = ~date, y = ~V_Fit_cur, name = "Nominal Scenario", mode = 'lines', type = 'scatter')
-      fig <- fig %>% add_trace(y = ~V_Fit_worst)
+      fig <- fig %>% add_trace(y = ~V_Fit_worst, name = "Worst Scenario")
       fig <- fig %>% add_markers(data = bed_stat_dat, x = ~date, y=~vent, color = I("red"), name = "Observed ICU Census")
       fig <- fig %>% add_polygons(data = poly04, x=~date, y=~Bounds, color = I("#00BFC4"), opacity = 0.5, name = "95% Prediction Interval for In-Sample One-Step Forecasts")
       fig <- fig %>% layout(yaxis = list(title="number of patients", showspikes = TRUE),
